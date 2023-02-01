@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500&display=swap");
+:root {
+  --nav: #14162e;
+  --text: white;
+  --text2: #109887;
+  --text3: #878997;
+  --sub-text: #adadad;
+  --table-options: #fbfdf7;
+  --options: #e2e3de;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+sup {
+  color: red;
+}
+i {
+  cursor: pointer;
+}
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.formnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  min-width: 100vw;
+  color: var(--text);
+  padding: 16px 18px;
+  font-size: 24px;
+  background: linear-gradient(88.52deg, #14162e 60.49%, #109887 100%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.cross {
+  font-size: 1.5rem;
+}
+.options {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--options);
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Roboto", sans-serif;
+  margin: 1rem 0;
+}
+.white {
+  background-color: white;
+  color: var(--text3);
+}
+.theme {
+  background-color: var(--text2);
+  color: white;
+}
+.border,
+.border_theme {
+  border: 1px solid #adadad;
+  border-radius: 5px;
+}
+.border_theme {
+  border-radius: 5px;
+}
+.button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+form select {
+  width: fit-content;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  padding-right: 3rem;
+}
+.gridf,
+.grids {
+  display: flex;
+  gap: 1rem;
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+}
+.gridf select {
+  display: block;
+}
+.users {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ruler {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.ruler p {
+  background-color: var(--text2);
+  display: flex;
+  justify-content: center;
+  font-size: 0.76rem;
+  color: white;
+  padding: 0.5rem;
+  margin-left: 0.45rem;
+  width: 20%;
+  border-radius: 10px 0 0 10px;
+}
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  position: relative;
+  border-left: 1rem solid var(--text2);
+  /* left:-2px; */
+}
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: var(--text2);
+  height: 2px;
+}
+
+.grids,
+.gridt {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+}
+.grids select {
+  width: 90%;
+}
+input[type="file"] {
+  visibility: hidden;
+  position: absolute;
+  z-index: -10;
+}
+label[for="avatar"] {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 1rem;
+  background-color: var(--sub-text);
+  cursor: pointer;
+}
+label[for="avatar"] p {
+  text-align: center;
+  width: 60%;
+}
+input,
+form select {
+  border: 1px solid #adadad;
+  border-radius: 5px;
+}
+.img {
+  grid-row: 2/12;
+}
+label[for="fname"] {
+  grid-column: 2/3;
+}
+#fname {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+#mname {
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+#lname {
+  grid-column: 4/5;
+  grid-row: 2/4;
+}
+#gender {
+  grid-column: 5/6;
+  grid-row: 2/4;
+}
+label[for="fnameAr"] {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+label[for="mnameAr"] {
+  grid-row: 5/6;
+  grid-column: 3/4;
+}
+label[for="lnameAr"] {
+  grid-row: 5/6;
+  grid-column: 4/5;
+}
+label[for="dob"] {
+  grid-row: 5/6;
+  grid-column: 5/6;
+}
+#fnameAr {
+  grid-column: 2/3;
+  grid-row: 6/8;
+}
+#mnameAr {
+  grid-column: 3/4;
+  grid-row: 6/8;
+}
+#lnameAr {
+  grid-column: 4/5;
+  grid-row: 6/8;
+}
+#dob {
+  grid-column: 5/6;
+  grid-row: 6/8;
+  width: 90%;
+  padding: 0.5rem;
+}
+label[for="mobile"] {
+  grid-row: 9/10;
+  grid-column: 2/3;
+}
+label[for="nationality"] {
+  grid-row: 9/10;
+  grid-column: 3/4;
+}
+label[for="conbirth"] {
+  grid-row: 9/10;
+  grid-column: 4/5;
+}
+label[for="cbirth"] {
+  grid-row: 9/10;
+  grid-column: 5/6;
+}
+#mobile,
+#nationality,
+#conbirth,
+#cbirth {
+  grid-row: 10/12;
+}
+label[for="nameoncard"] {
+  grid-row: 13/14;
+  margin-left: 1rem;
+}
+#nameoncard {
+  grid-row: 14/16;
+  grid-column: 1/6;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  width: 98%;
+}
+p {
+  grid-row: 16/17;
+  grid-column: 1/6;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0.5rem;
+  font-style: italic;
+}
+label[for="street"] {
+  grid-column: 1/3;
+}
+label[for="building"] {
+  grid-row: 3/4;
+}
+#street {
+  grid-column: 1/3;
+}
+#building {
+  padding: 0.5rem;
+  grid-row: 4/5;
+}
+
+.gridt select {
+  width: 100%;
+}
+label[for="address"] {
+  grid-column: 4/6;
+}
+label[for="salary"] {
+  grid-row: 4/5;
+}
+#status {
+  grid-column: 1/2;
+}
+#level {
+  grid-column: 2/3;
+}
+#address {
+  grid-column: 4/6;
+}
+#salary {
+  grid-row: 5/6;
+}
+
+.gridfo {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+}
+#idNum {
+  grid-column: 2/3;
+}
+label[for="fside"] {
+  grid-column: 3/5;
+}
+label[for="bside"] {
+  grid-column: 5/7;
+}
+label[for="issuedt"] {
+  grid-row: 4/5;
+}
+#issuedt {
+  grid-row: 5/6;
+  padding: 0.5rem;
+}
+#front,
+#back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2/6;
+  grid-column: 3/5;
+  border: 1px solid #adadad;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+#back {
+  grid-column: 5/7;
+}
+#idType {
+  grid-row: 2/3;
+}
+
+.gridfiv {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+}
+label[for="greencard"] {
+  grid-column: 1/2;
+}
+label[for="taxPayer"] {
+  grid-column: 2/3;
+}
+label[for="resident"] {
+  grid-column: 3/4;
+}
+label[for="political"] {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+label[for="customerRelation"] {
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+label[for="location"] {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+#customerRelation {
+  grid-row: 6/7;
+  grid-column: 1/2;
+  width: 100%;
+}
+#location {
+  grid-row: 6/7;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+select:invalid:required {
+  border: 2px solid red;
+}
